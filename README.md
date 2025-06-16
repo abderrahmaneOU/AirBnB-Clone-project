@@ -69,7 +69,7 @@ The hosting platform for the project’s codebase and documentation, enabling co
 
 **Booking**  
 - `id`: Unique identifier  
-- `user_id`: Foreign key referencing the User who made the booking  
+- `user_id`: Foreign key referencing the Usare er who made the booking  
 - `property_id`: Foreign key referencing the Property  
 - `start_date`: Start date of the stay  
 - `end_date`: End date of the stay  
@@ -96,3 +96,26 @@ The hosting platform for the project’s codebase and documentation, enabling co
 - A **Booking** is linked to one **User** and one **Property**.  
 - A **Payment** is associated with one **Booking**.  
 - A **User** can leave multiple **Reviews** on different Properties.
+
+## Feature Breakdown
+
+**User Management**  
+Allows users to sign up, log in, and manage their profile information. This ensures that each user has a secure, personalized experience on the platform.
+
+**Property Management**  
+Enables hosts to list their properties with details like title, location, price, and images. It provides tools to update or remove listings as needed.
+
+**Booking System**  
+Let users browse available properties and book them for specific dates. The system checks for availability, calculates tthe otal price, and confirms bookings.
+
+**Review System**  
+Allows guests to leave reviews and ratings after their stay. This fosters trust within the community and enables others to make informed decisions.
+
+**Payment Processing**  
+Handles secure payment transactions for bookings. Ensures that payments are recorded and associated with the correct bookings.
+
+**Search and Filter**  
+Users can search for properties based on location, date, price, and more. This improves usability by helping users quickly find suitable listings.
+
+**Responsive Interface**  
+A user-friendly web interface that works across devices. It ensures a smooth experience whether accessed on desktop, tablet, or mobile.
