@@ -48,3 +48,51 @@ A version control tool is used to manage code changes and facilitate collaborati
 
 **GitHub**  
 The hosting platform for the project’s codebase and documentation, enabling collaboration and version tracking.
+
+## Database Design
+
+### Entities and Fields
+
+**User**  
+- `id`: Unique identifier  
+- `name`: Full name of the user  
+- `email`: Email address  
+- `password`: Hashed password  
+- `created_at`: Account creation date  
+
+**Property**  
+- `id`: Unique identifier  
+- `owner_id`: Foreign key referencing the User  
+- `title`: Name of the listing  
+- `location`: Address or city  
+- `price_per_night`: Cost to stay per night  
+
+**Booking**  
+- `id`: Unique identifier  
+- `user_id`: Foreign key referencing the User who made the booking  
+- `property_id`: Foreign key referencing the Property  
+- `start_date`: Start date of the stay  
+- `end_date`: End date of the stay  
+
+**Review**  
+- `id`: Unique identifier  
+- `user_id`: Foreign key referencing the reviewer  
+- `property_id`: Foreign key referencing the Property  
+- `rating`: Score from 1 to 5  
+- `comment`: Written feedback  
+
+**Payment**  
+- `id`: Unique identifier  
+- `booking_id`: Foreign key referencing the Booking  
+- `amount`: Payment total  
+- `payment_date`: Date of transaction  
+- `status`: Paid, pending, or failed  
+
+### Relationships
+
+- A **User** can own multiple **Properties**.  
+- A **User** can make multiple **Bookings**.  
+- A **Property** can have multiple **Bookings** and **Reviews**.  
+- A **Booking** is linked to one **User** and one **Property**.  
+- A **Payment** is associated with one **Booking**.  
+- A **User** can leave multiple **Reviews** on different Properties.
