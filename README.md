@@ -119,3 +119,20 @@ Users can search for properties based on location, date, price, and more. This i
 
 **Responsive Interface**  
 A user-friendly web interface that works across devices. It ensures a smooth experience whether accessed on desktop, tablet, or mobile.
+
+## API Security
+
+**Authentication**  
+We will implement user authentication to verify the identity of users before allowing access to protected resources. This helps ensure that only registered users can log in and interact with their accounts securely.
+
+**Authorization**  
+Authorization will be used to control what authenticated users can do. For example, only property owners can modify their listings, and only users who made a booking can leave a review. This prevents unauthorized actions on sensitive data.
+
+**Rate Limiting**  
+Rate limiting will be enforced to prevent abuse such as spamming the API with excessive requests. It protects the system from performance degradation and denial-of-service attacks.
+
+**Data Validation and Sanitization**  
+All input data will be validated and sanitized to prevent common vulnerabilities like SQL injection and cross-site scripting (XSS). This ensures that only clean, expected data is processed.
+
+**Secure Communication (HTTPS)**  
+The application will enforce HTTPS for all communication between clients and the server. This encrypts sensitive data such as login credentials and payment information to prevent eavesdropping.
