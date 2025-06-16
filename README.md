@@ -106,7 +106,7 @@ Allows users to sign up, log in, and manage their profile information. This ensu
 Enables hosts to list their properties with details like title, location, price, and images. It provides tools to update or remove listings as needed.
 
 **Booking System**  
-Let users browse available properties and book them for specific dates. The system checks for availability, calculates tthe otal price, and confirms bookings.
+Let users browse available properties and book them for specific dates. The system checks for availability, calculates the total price, and confirms bookings.
 
 **Review System**  
 Allows guests to leave reviews and ratings after their stay. This fosters trust within the community and enables others to make informed decisions.
@@ -136,3 +136,17 @@ All input data will be validated and sanitized to prevent common vulnerabilities
 
 **Secure Communication (HTTPS)**  
 The application will enforce HTTPS for all communication between clients and the server. This encrypts sensitive data such as login credentials and payment information to prevent eavesdropping.
+
+## CI/CD Pipeline
+
+**What is CI/CD?**  
+CI/CD stands for Continuous Integration and Continuous Deployment. It is a development practice where code changes are automatically tested and deployed to production. This helps teams deliver updates faster and with fewer bugs.
+
+**Importance for the Project**  
+Implementing a CI/CD pipeline ensures that the Airbnb Clone project remains stable and up-to-date. It automates repetitive tasks like testing, building, and deploying, which reduces human error and speeds up the development process.
+
+**Tools Used**  
+- **GitHub Actions**: Automates workflows such as running tests and deploying code after each push.  
+- **Docker**: Containerizes the application, making it easy to deploy in different environments.  
+- **pytest or unittest**: Used for automated testing of the application logic.  
+- **Heroku or AWS**: Can be used to deploy the final application to a live environment.
